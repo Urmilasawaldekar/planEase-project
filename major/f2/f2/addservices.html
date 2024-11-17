@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="dark">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap Admin Dashboard</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css">
+    <script src="https://kit.fontawesome.com/ae360af17e.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style4.css">
+    <link rel="stylesheet" href="style3.css">
+</head>
+<style>
+        
+    input[type=text],textarea ,select {
+       
+       width: 100%;
+       padding: 12px 20px;
+       margin: 8px 0;
+       display: inline-block;
+       border: 1px solid #ccc;
+       border-radius: 4px;
+       box-sizing: border-box;
+     }
+     
+     input[type=submit] {
+         
+       width: 100%;
+       background-color: #425c43;
+       color: white;
+       padding: 14px 20px;
+       margin: 8px 0;
+       border: none;
+       border-radius: 4px;
+       cursor: pointer;
+       font-size: 1rem;
+     }
+     
+     input[type=submit]:hover {
+       background-color: #071a08bd;
+     }
+     
+     .formdiv {
+       
+       /* position:relative;  */
+       border-radius: 5px;
+       background-color: #f2f2f2;
+       padding: 10px;
+       width:30%;
+       margin-left:30%;
+       margin-top:1%;
+       
+     }
+     label{
+        display: inline-block;
+        color: black;
+     }
+</style>
+
+<body>
+    <div class="wrapper">
+        <aside id="sidebar" class="js-sidebar">
+            <!-- Content For Sidebar -->
+            <div class="h-100">
+                <div class="sidebar-logo">
+                    <a href="#">Planeves</a>
+                </div>
+                
+                    <li class="sidebar-item">
+                        <a href="#" class="sidebar-link">
+                            My profile
+                        </a>
+                    </li>
+                </li>
+                <li class="sidebar-item">
+                    <a href="vendorsdash.html" class="sidebar-link">
+                        Dashboard                    </a>
+                    </li>
+                    <li class="sidebar-item">
+                        <a href="#" class="sidebar-link" style="color: black;">
+                            Add services           </a>
+                        </li>
+                           
+                        </li>
+                                    
+                        
+                    </li>
+                    <li class="sidebar-item">
+                        <a href="#" class="sidebar-link collapsed" data-bs-target="#auth" data-bs-toggle="collapse"
+                            aria-expanded="false"><i class="fa-regular fa-user pe-2"></i>
+                            gallery
+                        </a>
+                        <ul id="auth" class="sidebar-dropdown list-unstyled collapse" data-bs-parent="#sidebar">
+                            <li class="sidebar-item">
+                                <a href="#" class="sidebar-link">images</a>
+                            </li>
+                            <li class="sidebar-item">
+                                <a href="video.html" class="sidebar-link">videos</a>
+                            </li>
+                    
+                        </ul>
+    
+                        <li class="sidebar-item">
+                            <a href="#" class="sidebar-link">
+                                logout
+                            </a>
+                        </li>
+                   
+                </ul>
+            </div>
+        </aside>
+        <div class="main">
+            <nav class="navbar navbar-expand px-3 border-bottom">
+                <button class="btn" id="sidebar-toggle" type="button">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="navbar-collapse navbar">
+                    <ul class="navbar-nav">
+                        <li class="nav-item dropdown">
+                            <a href="#" data-bs-toggle="dropdown" class="nav-icon pe-md-0">
+                                <img src="image/profile.jpg" class="avatar img-fluid rounded" alt="">
+                            </a>
+                            <div class="dropdown-menu dropdown-menu-end">
+                                <a href="#" class="dropdown-item">Home</a>
+                                <a href="vendors.html" class="dropdown-item">Vendors</a>
+                                <a href="about.html" class="dropdown-item">About us</a>
+                                <a href="registration.html" class="dropdown-item">Registration</a>
+                                <a href="login.html" class="dropdown-item">login</a>
+                                <a href="#" class="dropdown-item">logout</a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+           <div class="content">
+            <div class="formdiv">
+                <h1>Add Service</h1>
+                  <form action="#">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" placeholder="Your name..">
+                    <br/>
+                    
+                    <label for="Pnumber">Phone number</label>
+                    <input type="text" id="name" name="name" placeholder="Your Phone number..">
+                    <br/>
+                    <label for="Title">Title</label>
+                    <input type="text" id="title" name="title" placeholder="Your Title..">
+                    <br/>
+                    <label for="Select Service Category ">Select Service Category </label>
+                    <select id="Select Service Category " name="Select Service Category ">
+                      <option disabled selected>Select vendor type</option>
+                      <<option value="Photographers">Photographers</option>
+                      <option value="Wedding Planners">Wedding Planners</option>
+                      <option value="Band">Band</option>
+                      <option value="Tent House">Tent House</option>
+                      <option value="DJ Sound">DJ Sound</option>
+                      <option value="Invitation card">nvitation card</option>
+                      <option value="Caterers">Caterers</option>
+                      <option value="Choreographers">Choreographers</option> 
+                    </select>
+                    <br/>
+                    <label for=""SelectCity ">Select City </label>
+                    <select name="SelectCity" id="SelectCity" class="SelectCity" required="">
+                      <option disabled selected>City</option>
+                      <option value="Mumbai">Mumbai</option>
+                      <option value="Delhi">Delhi</option>
+                      <option value="Burhanpur">Burhanpur</option>
+                      <option value="Nagpur">Nagpur</option>
+                      <option value="Indore">Indore</option>
+                      <option value="Jalgaon">Jalgaon</option>
+                      
+                  </select>
+                  <label for="Address">Address</label>
+                  <input class="form-control" type="text" name="address" id="address" required="" placeholder="Address..">
+                  <label for="Description">Description</label>
+                  <textarea name="message" rows="5" placeholder="your message" required></textarea>
+                    <br/>
+                   <a href=""><input type="submit" value="Next"></a> 
+                  </form>
+                </div>
+            </div>
+        
+           </div>
+                 
+                               
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>

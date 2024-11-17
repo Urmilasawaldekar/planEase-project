@@ -1,0 +1,125 @@
+
+.container2{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top:30px;
+}
+.cards{
+    width: 300px;
+    margin: 10px;
+    background-color: white;
+    border-radius: 15px;
+    transition: 0.2s;
+	margin-top:0px;
+	margin-bottom:40px;
+    border:solid 1px;
+}
+.card-img img{
+    width: 96%;
+    margin-left:5px;
+    margin-top:5px;
+    border-radius: 10px 10px 10px 10px;
+    border:1px solid;
+}
+.cards:hover{
+    box-shadow:3.9px 7.8px 7.8px hsl(0deg 0% 0% /0.38)
+}
+
+
+.card-footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-footer  a{
+  text-decoration: none;
+   width: 150px;
+    background-color: rgb(0, 153, 0);
+    color: white;
+    border-radius: 15px;
+    border: 1px solid black;
+    padding: 6px;
+    font-size: 17px;
+    cursor: pointer;
+    margin: 10px;
+    transition: 0.2s;
+	text-align:center;
+	font-family:times-new-roman;
+   
+}
+.card-footer a:hover
+{
+    background-color: white;
+    color: black;
+    border: 2px solid black;
+}
+
+
+.view{
+    height: 30px;
+    width: 150px;
+    background-color: deeppink;
+    border-radius: 10px;
+}
+
+
+.about-us{
+    height: 100vh;
+    width: 100%;
+    padding: 90px 0;
+    background-color: white;
+  }
+  .pic{
+    border-radius: 10px;
+    height: 375px;
+    width: 450px;
+  }
+  .about{
+    width: 1130px;
+    max-width: 85%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+  .text{
+    width: 540px;
+  }
+  .text h2{
+    font-size: 90px;
+    font-weight: 600;
+    margin-bottom: 10px;
+  
+  }
+  .text h5{
+    font-size: 22px;
+    font-weight: 500;
+    margin-bottom: 20px;
+  }
+  span{
+    color: #4070f4;
+  }
+  .text p{
+    font-size: 18px;
+    line-height: 25px;
+    letter-spacing: 1px;
+  }
+  .data{
+    margin-top: 30px;
+  }
+  .hire{
+    font-size: 18px;
+    background: #4070f4;
+    color: #fff;
+    text-decoration: none;
+    border: none;
+    padding: 8px 25px;
+    border-radius: 6px;
+    transition: 0.5s;
+  }
+  .hire:hover{
+    background: #000;
+    border: 1px solid #4070f4;
+  }

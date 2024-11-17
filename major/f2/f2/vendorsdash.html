@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="dark">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap Admin Dashboard</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css">
+    <script src="https://kit.fontawesome.com/ae360af17e.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style4.css">
+</head>
+<style>
+       .hero {
+    display: flex;
+    justify-content: center;
+    width:50% ;
+    margin-left: 30%;
+  }
+  
+
+  .box {
+    width: 50%;
+    height: 150px;
+    background-color: #df9409; /* Updated color */
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .box i {
+    font-size: 30px;
+    margin-bottom: 16px;
+    color: #1b1414;
+  }
+  
+  .box h1 {
+    font-size: 20px;
+    margin-top: 0;
+  }
+  
+  .box span {
+    font-size: 24px;
+    color: #1e1a1a;
+    text-transform: uppercase;
+    margin-bottom: 8px;
+  }
+  
+</style>
+
+<body>
+    <div class="wrapper">
+        <aside id="sidebar" class="js-sidebar">
+            <!-- Content For Sidebar -->
+            <div class="h-100">
+                <div class="sidebar-logo">
+                    <a href="#">Planevase</a>
+                </div>
+                
+                    <li class="sidebar-item">
+                        <a href="#" class="sidebar-link">
+                            My profile
+                        </a>
+                    </li>
+                </li>
+                <li class="sidebar-item">
+                    <a href="vendorsdash.html" class="sidebar-link">
+                        Dashboard                    </a>
+                    </li>
+                    <li class="sidebar-item">
+                        <a href="addservices.html" class="sidebar-link">
+                            Add services           </a>
+                        </li>
+                           
+                        </li>
+                                    
+                        
+                    </li>
+                    <li class="sidebar-item">
+                        <a href="#" class="sidebar-link collapsed" data-bs-target="#auth" data-bs-toggle="collapse"
+                            aria-expanded="false"></i>
+                            gallery
+                        </a>
+                        <ul id="auth" class="sidebar-dropdown list-unstyled collapse" data-bs-parent="#sidebar">
+                            <li class="sidebar-item">
+                                <a href="image.html" class="sidebar-link">images</a>
+                            </li>
+                            <li class="sidebar-item">
+                                <a href="video.html" class="sidebar-link">videos</a>
+                            </li>
+                    
+                        </ul>
+                        <li class="sidebar-item">
+                            <a href="#" class="sidebar-link">
+                            logout             </a>
+                            </li>
+                   
+                </ul>
+            </div>
+        </aside>
+        <div class="main">
+            <nav class="navbar navbar-expand px-3 border-bottom">
+                <button class="btn" id="sidebar-toggle" type="button">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="navbar-collapse navbar">
+                    <ul class="navbar-nav">
+                        <li class="nav-item dropdown">
+                            <a href="#" data-bs-toggle="dropdown" class="nav-icon pe-md-0">
+                                <img src="./image/istockphoto-1300845620-1024x1024.jpg" class="avatar img-fluid rounded" alt="">
+                            </a>
+                            <div class="dropdown-menu dropdown-menu-end">
+                                <a href="home.html" class="dropdown-item">Home</a>
+                                <a href="vendors.html" class="dropdown-item">Vendors</a>
+                                <a href="about.html" class="dropdown-item">About us</a>
+                                <a href="registration.html" class="dropdown-item">Registration</a>
+                                <a href="login.html" class="dropdown-item">login</a>
+                                <a href="#" class="dropdown-item">logout</a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+           <div class="content">
+            <div class="hero">
+                <div class="box">
+                  <i class="fa-solid fa-image" style="color: #060b13;"></i>
+                  <span>photos</span>
+                  <h1>10</h1>
+                </div>
+                
+                <div class="box">
+                  <i class="fa-solid fa-video" style="color: #0d1421;"></i>
+                  <span>videos</span>
+                  <h1>10</h1>
+                </div>
+            </div>
+        
+        </div>
+                               
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+
+</body>
+
+</html>

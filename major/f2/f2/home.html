@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style1.css">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+  </head>
+  <style>
+
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+p {
+    padding-bottom: 15px;
+}
+
+footer {
+    padding: 50px 25px;
+    background-color: #000;
+    color: #6d6d6d;
+    margin-top: auto;
+}
+
+.footer-top {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    row-gap: 20px;
+}
+
+.footer-top h5 {
+    font-size: 18px;
+    color: #fff;
+    font-weight: 500;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.footer-top ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.footer-i ul li {
+    list-style: none;
+  
+}
+
+ul li {
+    transition: color 0.3s;
+}
+
+ul li:hover {
+    color: #fff;
+}
+
+hr {
+    border: none;
+    margin: 25px;
+    height: 1px;
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.footer-bottom {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 20px;
+}
+
+.footer-bottom ul {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    font-size: 20px;
+}
+  </style>
+  <body>
+    <nav>
+      <input type="checkbox" id="check">
+      <label for="check" class="checkbtn">
+        <i class="fas fa-bars"></i>
+      </label>
+      <label class="logo-i">PlanEase</label>
+      <ul>
+           
+        <li><a  class="active" href="home.html">Home</a></li>
+        <li><a href="vendors.html">Vendors</a></li>
+     
+      <li  ><a href="about.html">About Us</a></li>
+      <li ><a href="#contact">Contact Us</a></li>
+      <li><a href="login.html"><i class="fa fa-user mr-2" aria-hidden="true"></i>Login</a></li>
+      <li><a href="registration.html"><i class="fa fa-user mr-2" aria-hidden="true"></i>Register</a></li>
+      <li><a href="adminlogin.html"><i class="fa fa-user mr-2" aria-hidden="true"></i>Admin Login</a></li>
+
+      </ul>
+    </nav>
+    
+
+    <div class="TopFixedBanner">
+        <div class="TopBannerOverlay">
+            <h3 style="  text-align: center;margin-top:160px;color:white">WELCOME TO EVENTPOINT!!</h3>
+            <P style="  text-align: center;margin-top:0px;color:white">A Big Day Celebration</P>
+
+            <div class="search-box">            
+                <select type="text" class="search-field" >
+                <option disabled selected>Select vendor type</option>
+                <<option value="Photographers">Photographers</option>
+                <option value="Wedding Planners">Wedding Planners</option>
+                <option value="Band">Band</option>
+                <option value="Tent House">Tent House</option>
+                <option value="DJ Sound">DJ Sound</option>
+                <option value="Invitation card">nvitation card</option>
+                <option value="Caterers">Caterers</option>
+                <option value="Choreographers">Choreographers</option> 
+                </select>
+                        <select type="text" class="search-field">
+                            <option disabled selected>City</option>
+                            <option value="Mumbai">Mumbai</option>
+                            <option value="Delhi">Delhi</option>
+                            <option value="Burhanpur">Burhanpur</option>
+                            <option value="Nagpur">Nagpur</option>
+                            <option value="Indore">Indore</option>
+                            <option value="Jalgaon">Jalgaon</option>
+                </select>
+                <button class="btn">Search</button></div>
+
+        </div></div>
+        <div class="title" >
+            <h6 style="display: flex;align-items: center;justify-content: center;  font-size: 1.5rem;
+            font-weight: bold; margin-top:10px;">Find Trusted Vendor</h6>
+        </div>
+        <div class="vendor" id="vendor">
+            
+
+        <div class="iteam" id="iteam">
+            <a href="#">
+                <div class="imege" style="  width: 100%; object-fit: cover;object-position: top; color: #24262b; ">
+                    <img src="image/l1.webp"  alt="Photographers" width="200" height="111" >
+                    <h5 >Photographers</h5>
+                </div>
+            </a>
+
+
+        </div>
+        <div class="iteam" id="iteam">
+            <a href="#">
+                <div class="imege" style="  width: 100%; object-fit: cover;object-position: top; color: #24262b; ">
+                    <img src="image/wed.webp"  alt="Wedding Planners" width="200" height="111" >
+                    <h5 >Wedding Planners</h5>
+                </div>
+            </a>
+
+
+        </div>
+        <div class="iteam" id="iteam">
+            <a href="#">
+                <div class="imege" style="  width: 100%; object-fit: cover;object-position: top; color: #24262b; ">
+                    <img src="image/band.webp"  alt="Band" width="200" height="111" >
+                    <h5 >Band</h5>
+                </div>
+            </a>
+
+
+        </div>
+        <div class="iteam" id="iteam">
+            <a href="#">
+                <div class="imege" style="  width: 100%; object-fit: cover;object-position: top; color: #24262b; ">
+                    <img src="image/ten.webp"  alt="Tent House" width="200" height="111" >
+                    <h5 >Tent House</h5>
+                </div>
+            </a>
+
+
+        </div>
+        <div class="iteam" id="iteam">
+            <a href="#">
+                <div class="imege" style="  width: 100%; object-fit: cover;object-position: top; color: #24262b; ">
+                    <img src="image/dj.webp"  alt="DJ Sound" width="200" height="111" >
+                    <h5 >DJ Sound</h5>
+                </div>
+            </a>
+
+
+        </div>
+        <div class="iteam" id="iteam">
+            <a href="#">
+                <div class="imege" style="  width: 100%; object-fit: cover;object-position: top; color: #24262b; ">
+                    <img src="image/inv.webp"  alt="Invitation card" width="200" height="111" >
+                    <h5 >Invitation card</h5>
+                </div>
+            </a>
+
+
+        </div>
+        <div class="iteam" id="iteam">
+            <a href="#">
+                <div class="imege" style="  width: 100%; object-fit: cover;object-position: top; color: #24262b; ">
+                    <img src="image/cr.webp"  alt="Caterers" width="200" height="111" >
+                    <h5 >Caterers</h5>
+                </div>
+            </a>
+
+
+        </div>
+        <div class="iteam" id="iteam">
+            <a href="#">
+                <div class="imege" style="  width: 100%; object-fit: cover;object-position: top; color: #24262b; ">
+                    <img src="image/co.webp"  alt="Choreographers" width="200" height="111" >
+                    <h5 >Choreographers</h5>
+                </div>
+            </a>
+
+
+        </div>
+    </div>
+
+            
+            </div>
+        </div>
+                    </div>
+                    
+    
+        
+
+  
+                   
+                    <footer>
+                        <div class="footer-top">
+                            <div class=".footer-i">
+                                <h5>Popular links</h5>
+                                <ul>
+                                    <li><a href="#">Home</a></li>
+                                    <li><a href="#">vendors</a></li>
+                                    <li><a href="#">About us</a></li>
+                                    <li><a href="#">Contact</a></li>
+                                </ul>
+                            </div>
+                          
+                            <div>
+                                <h5>contactus</h5>
+                                <ul>
+                                    <li><a href="#"></a></li>
+                                    <li><a href="#">ipsum</a></li>
+                                    <li><a href="#">Lorem</a></li>
+                                    <li><a href="#">ipsum</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                        <hr>
+                        <div class="footer-bottom">
+                            <p>&copy; 2023 Company. All rights reserved.</p>
+                            <ul>
+                                <li>
+                                    <a href="#">
+                                        <i class="fa-brands fa-github"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <i class="fa-brands fa-linkedin"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <i class="fa-brands fa-twitter"></i>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+        
+    <!-- <footer class="footer" id="contactus">
+            <div class="container">
+                <div class="row">
+                    <div class="footer-col">
+                        <h4>Home Tab</h4>
+                        <ul>
+                            <li><a href="home.html"  >Home</a></li><br/>
+                            <li ><a href="#">Vender</a></li><br/>
+                            <li><a href="#">About us</a></li>
+                            
+                           
+    
+    
+    
+    
+                        </ul> -->
+    
+                    <!-- </div>
+                    <div class="footer-col2">
+                        <div class="footer-col">
+                            <h4>Home Tab</h4>
+                            <ul>
+                                <li><a href="home.html"  >Home</a></li><br/>
+                                <li ><a href="#">Vender</a></li><br/>
+                                <li><a href="#">About us</a></li>
+                                
+                               
+        
+        
+        
+        
+                            </ul>
+        
+                        </div>
+                    <h4>Contact Us</h4>
+                
+                    <form class="contact" action="" method="post">
+                    <div class="contact-form">
+               
+                <form class="contact" action="" method="post">
+                    <input type="text" name="name" class="text-box" placeholder="your name" required>
+                    <input type="email" name="email" class="text-box" placeholder="your email" required>
+                    <textarea name="message" rows="5" placeholder="your message" required></textarea>
+                    <input type="submit" name="submit" class="send-btn" value="send">
+                </form>
+            </div>
+                    </div>  -->
+
+
+</body>
+</html>
+  
